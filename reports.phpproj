@@ -1,0 +1,55 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>reports</Name>
+    <ProjectGuid>{3d0242e9-4750-4f0f-969f-46873ea229c3}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <SpecificPageValue>clinipam/google-ads/index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="clinipam\facebook\index.php" />
+    <Compile Include="clinipam\facebook-ads\index.php" />
+    <Compile Include="clinipam\google-ads\index.php" />
+    <Compile Include="clinipam\instagram\index.php" />
+    <Compile Include="clinipam\linkedin\index.php" />
+    <Compile Include="clinipam\linkedin-ads\index.php" />
+    <Compile Include="clinipam\seo\index.php" />
+    <Compile Include="clinipam\social-media\index.php" />
+    <Compile Include="clinipam\functions.php" />
+    <Compile Include="clinipam\index.php" />
+    <Compile Include="clinipam\testes.php" />
+    <Compile Include="includes\credentials.json" />
+    <Compile Include="includes\header-dash.php" />
+    <Compile Include="includes\header.php" />
+    <Compile Include="includes\sheets.php" />
+    <Compile Include="includes\sol-boleto-gads.php" />
+    <Compile Include="includes\style.css" />
+    <Compile Include="reports-images\footer-background.png" />
+    <Compile Include="reports-images\gads.png" />
+    <Compile Include="reports-images\social-media-ads.png" />
+    <Compile Include="reports-images\Social_Media.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="clinipam\facebook" />
+    <Folder Include="clinipam\facebook-ads" />
+    <Folder Include="clinipam\google-ads" />
+    <Folder Include="clinipam\instagram" />
+    <Folder Include="clinipam\linkedin" />
+    <Folder Include="clinipam\linkedin-ads" />
+    <Folder Include="clinipam\seo" />
+    <Folder Include="clinipam\social-media" />
+    <Folder Include="clinipam" />
+    <Folder Include="includes" />
+    <Folder Include="reports-images" />
+  </ItemGroup>
+</Project>
