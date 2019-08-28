@@ -48,17 +48,22 @@ if (empty($values))
 
 {
 
-	//PPC
-	$mask1 = "%10s";
-	$mask2 = "%10s";
-	$mask3 = "%10s";
-	$mask4 = "%10s";
+
+	//Only activate this When Using local Host
+	$clientName = "clinipam";
+
+	//Services
+	$mask1 = "%100s";
+	$mask2 = "%100s";
+	$mask3 = "%100s";
+	$mask4 = "%100s";
 	$mask5 = "%100s";
 	$mask6 = "%100s";
 	$mask7 = "%100s";
 	$mask8 = "%100s";
 
-	//ReportUrl
+
+	//Infos that go to .infob
 	$mask9 = "%100s";
 	$mask10 = "%100s";
 	$mask11 = "%100s";
@@ -68,8 +73,15 @@ if (empty($values))
 	$mask15 = "%100s";
 	$mask16 = "%100s";
 
-
-	$clientName = "clinipam";
+	//ReportUrl
+	$mask17 = "%10s";
+	$mask18 = "%10s";
+	$mask19 = "%10s";
+	$mask20 = "%10s";
+	$mask21 = "%100s";
+	$mask22 = "%100s";
+	$mask23 = "%100s";
+	$mask24 = "%100s";
 
 	foreach ($values as $row)
 
@@ -79,28 +91,40 @@ if (empty($values))
 
 		{
 
-			//PPC
-			$Gsaldo = sprintf($mask1, $row[1]);
-			$GdiasRes = sprintf($mask2, $row[2]);
-			$Sorganic = sprintf($mask3, $row[3]);
-			$Stotal = sprintf($mask4, $row[4]);
+			//
 
-			$Fsaldo = sprintf($mask5, $row[5]);
-			$FdiasRes = sprintf($mask6, $row[6]);
-			$Lsaldo = sprintf($mask7, $row[7]);
-			$LdiasRes = sprintf($mask8, $row[8]);
+			//Services
+			$gAds = sprintf($mask1, $row[1]);
+			$seo = sprintf($mask2, $row[2]);
+			$socialmedia = sprintf($mask3, $row[3]);
+			$fb = sprintf($mask4, $row[4]);
+			$fbAds = sprintf($mask5, $row[5]);
+			$insta = sprintf($mask6, $row[6]);
+			$linkedin = sprintf($mask7, $row[7]);
+			$linkedinAds = sprintf($mask8, $row[8]);
+
+			//Infos
+			$Gsaldo = sprintf($mask9, $row[9]);
+			$GdiasRes =  sprintf($mask10, $row[10]);
+			$Sorganic =  sprintf($mask11, $row[11]);
+			$Stotal =  sprintf($mask12, $row[12]);
+			$Fsaldo =  sprintf($mask13, $row[13]);
+			$FdiasRes =  sprintf($mask14, $row[14]);
+			$Lsaldo =  sprintf($mask15, $row[15]);
+			$LdiasRes =  sprintf($mask16, $row[16]);
+
 
 			//ReportUrl
-			$gAdsReportUrl = sprintf($mask9, $row[9]);
-			$seoReportUrl = sprintf($mask10, $row[10]);
-			$socialmediaReportUrl = sprintf($mask11, $row[11]);
-			$fbReportUrl = sprintf($mask12, $row[12]);
-			$fbAdsReportUrl = sprintf($mask13, $row[13]);
-			$instaReportUrl = sprintf($mask14, $row[14]);
-			$linkedinReportUrl = sprintf($mask15, $row[15]);
-			$linkedinAdsReportUrl = sprintf($mask16, $row[16]);
+			$gAdsReportUrl = sprintf($mask17, $row[17]);
+			$seoReportUrl = sprintf($mask18, $row[18]);
+			$socialmediaReportUrl = sprintf($mask19, $row[19]);
+			$fbReportUrl = sprintf($mask20, $row[20]);
+			$fbAdsReportUrl = sprintf($mask21, $row[21]);
+			$instaReportUrl = sprintf($mask22, $row[22]);
+			$linkedinReportUrl = sprintf($mask23, $row[23]);
+			$linkedinAdsReportUrl = sprintf($mask24, $row[24]);
 
-			//PPC
+			//Infos
 			echo $Gsaldo."<br>";
 			echo $GdiasRes."<br>";
 			echo $Sorganic."<br>";
