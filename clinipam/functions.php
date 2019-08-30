@@ -3,15 +3,17 @@
 $clientName = "clinipam";
 $clientUpperName = "Clinipam";
 
-//Services
-$gAds = 1;
-$seo = 1;
-$socialmedia = 1;
-$fb = 1;
-$fbAds = 0;
-$insta = 0;
-$linkedin = 0;
-$linkedinAds = 0;
+//Tests
+//$gAds = 1;
+//$seo = 1;
+//$socialmedia = 1;
+//$fb = 1;
+//$fbAds = 0;
+//$insta = 0;
+//$linkedin = 0;
+//$linkedinAds = 0;
+
+
 
 //Url
 $dashUrl = "http://relatorios.3wpublicidade.com.br/".$clientName."/";
@@ -24,15 +26,8 @@ $instaUrl = "http://relatorios.3wpublicidade.com.br/".$clientName."/instagram";
 $linkedinUrl = "http://relatorios.3wpublicidade.com.br/".$clientName."/linkedin";
 $linkedinAdsUrl = "http://relatorios.3wpublicidade.com.br/".$clientName."/linkedin-ads";
 
-//ReportUrl
-$gAdsReportUrl = "https://datastudio.google.com/embed/reporting/1BAwCHbM4kN_t9HqKiV23IMDXJPyoBIc7/page/QS9t";
-$seoReportUrl = "";
-$socialmediaReportUrl = "";
-$fbReportUrl = "";
-$fbAdsReportUrl = "";
-$instaReportUrl = "";
-$linkedinReportUrl = "";
-$linkedinAdsReportUrl = "";
+/**
+
 
 
 /**

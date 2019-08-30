@@ -1,70 +1,50 @@
-<?php include 'functions.php';?>				
+<?php include 'functions.php';
+	  include	'sheets.php';
+	  $clientName = "clinipam";
+?>				
 <!DOCTYPE html>
 
-<html class="js flexbox flexboxlegacy">
-
+<html>
 <head>
 
-				
+	<!-- Links -->			
 	<link href="../includes/style.css" rel="stylesheet" type="text/css">
-	<link href="http://3wpublicidade.com.br/wp-content/themes/3wpublicidade/fonts/stylesheet.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="http://3wpublicidade.com.br/wp-content/themes/3wpublicidade/imagens/favicon.png" type="image/x-icon">
-	<link rel="icon" href="http://3wpublicidade.com.br/wp-content/themes/3wpublicidade/imagens/favicon.png" type="image/png">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#ac271b">
+
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" id="client-logo-carouselowl-carousel_css-css" href="http://3wpublicidade.com.br/wp-content/plugins/client-carousel/classes/assets/css/client_css.css?ver=1.0.0" type="text/css" media="all">
+
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+	<link rel="icon" href="http://3wpublicidade.com.br/wp-content/themes/3wpublicidade/imagens/favicon.png" type="image/png">
 
-	<title>Relatórios De Desempenho | 3W Publicidade</title>
+	<link rel="shortcut icon" href="http://3wpublicidade.com.br/wp-content/themes/3wpublicidade/imagens/favicon.png" type="image/x-icon">
 
+<title>Relatórios De Desempenho | 3W Publicidade</title>
 <!-- Metas -->
 <meta name="description" content="Relatórios de Desempenho">
 <meta property="og:locale" content="pt_BR">
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
+<!-- Mobile Menu .js-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
+	<script type="text/javascript" src="http://3wpublicidade.com.br/wp-content/themes/3wpublicidade/js/index.js"></script>
+	<script type="text/javascript">
+		var BASE_URL = 'http://3wpublicidade.com.br';
+		var TEMPLATE_URL = 'http://3wpublicidade.com.br/wp-content/themes/3wpublicidade';
+	</script> -->
+<!--Endo of Mobile Menu .js-->
 
-<link rel="stylesheet" id="bxslider-css-css" href="http://3wpublicidade.com.br/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=4.9.10" type="text/css" media="">
-<link rel="stylesheet" id="kiwi-logo-carousel-styles-css" href="http://3wpublicidade.com.br/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=4.9.10" type="text/css" media="">
-<link rel="stylesheet" id="client-logo-carouselowl-carousel_css-css" href="http://3wpublicidade.com.br/wp-content/plugins/client-carousel/classes/assets/css/client_css.css?ver=1.0.0" type="text/css" media="all">
-<link rel="stylesheet" id="client-logo-carouselowl-carousel_css1-css" href="http://3wpublicidade.com.br/wp-content/plugins/client-carousel/classes/assets/css/owl.carousel.css?ver=1.0.0" type="text/css" media="all">
-<link rel="stylesheet" id="client-logo-carouselfont-awesome-css" href="http://3wpublicidade.com.br/wp-content/plugins/client-carousel/classes/assets/css/font-awesome.min.css?ver=1.0.0" type="text/css" media="all">
-<link rel="stylesheet" id="contact-form-7-css" href="http://3wpublicidade.com.br/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.2" type="text/css" media="all">
-<script type="text/javascript" src="http://3wpublicidade.com.br/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="http://3wpublicidade.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-<script type="text/javascript" src="http://3wpublicidade.com.br/wp-content/plugins/client-carousel/classes/assets/js/owl.carousel.min.js?ver=4.9.10"></script>
-<script type="text/javascript" src="http://3wpublicidade.com.br/wp-content/plugins/client-carousel/classes/assets/js/modernizr.custom.js?ver=4.9.10"></script>
-<script type="text/javascript" src="http://3wpublicidade.com.br/wp-content/plugins/client-carousel/classes/assets/js/bootstrap.min.js?ver=4.9.10"></script>
-<link rel="https://api.w.org/" href="https://3wpublicidade.com.br/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://3wpublicidade.com.br/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://3wpublicidade.com.br/wp-includes/wlwmanifest.xml">
-<meta name="generator" content="WordPress 4.9.10">
-<link rel="shortlink" href="https://3wpublicidade.com.br/?p=74">
-<link rel="alternate" type="application/json+oembed" href="https://3wpublicidade.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2F3wpublicidade.com.br%2Fservico%2Flinks-patrocinados%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://3wpublicidade.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2F3wpublicidade.com.br%2Fservico%2Flinks-patrocinados%2F&amp;format=xml">
-<style type="text/css">.fancybox-margin{margin-right:17px;}</style><style type="text/css">.fancybox-margin{margin-right:17px;}</style>
 
 
 </head>
 
-
 <body cz-shortcut-listen="true">
-
-
 
   <header id="header">
 		<section class="top-bar">
@@ -124,12 +104,6 @@ img.emoji {
 
 	  						</section>
   					</section>";
-					
-
-
-
-
-
 					?>
 
 					

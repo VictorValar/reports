@@ -1,12 +1,13 @@
 
 <?php 
+$Gsaldo = "1111";
+$GdiasRes = "1";
+$Sorganic = "2222";
+$Stotal = "3333";
+include '../includes/header-dash.php';
+$clientName = "clinipam";
 
-	include '../includes/header-dash.php';
-	$Gsaldo = "1111";
-	$GdiasRes = "1";
-	$Sorganic = "2222";
-	$Stotal = "3333";
-	include '../includes/sheets.php';
+
 ?>	
 	
 <section id="greyband">
@@ -69,9 +70,9 @@ if ($gAds == 1)
 		</section>
 	</div>";
 } else 
-  {
+{
 	//<!--Google Ads No Service Box-->	
-  	echo "<div class='servicebox row noservice'>
+	echo "<div class='servicebox row noservice'>
 		<section class=' servicebox noservice'>
 			<div class='gadsboxL col-12'>
 				<div class='row'>
@@ -94,8 +95,8 @@ if ($gAds == 1)
 
 	</div>
 </div>";
-  }
-  	
+}
+
 //<!--End of Google Ads Box-->
 
 //<!--SEO Box-->
@@ -138,9 +139,9 @@ if ($seo == 1)
 		</section>
 	</div>";
 } else
-  {
+{
 	//<!--SEO No Service Box-->
-  	echo "<div class='servicebox sb1 row noservice'>
+	echo "<div class='servicebox sb1 row noservice'>
 		<section class=' servicebox noservice'>
 			<div class='gadsboxL sb1 col-12'>
 				<div class='row'>
@@ -156,7 +157,7 @@ if ($seo == 1)
 		</section>
 	</div>
 </div>";
-  }	
+}	
 //<!--End of SEO Box-->
 
 //<!--Social Media Box-->
@@ -192,9 +193,9 @@ if ($socialmedia == 1)
 		</section>
 	</div>";
 } else 
-	//<!--Social Media No Service Box-->
-   {
-	   echo "<div class='servicebox noservice row'>
+//<!--Social Media No Service Box-->
+{
+	echo "<div class='servicebox noservice row'>
 		<section class=' servicebox noservice'>
 			<div class='gadsboxL sb1 col-12'>
 				<div class='row'>
@@ -256,7 +257,7 @@ if ($fbAds == 1)
 	</div>";
 } else
 //<!--Facebook Ads No Service Box-->
-	{
+{
 	echo "<div class='servicebox row noservice'>
 		<section class=' servicebox noservice'>
 			<div class='gadsboxL col-12'>
@@ -274,9 +275,9 @@ if ($fbAds == 1)
 
 </div>";
 }	
-	//<!--End of Facebook Ads Box-->
+//<!--End of Facebook Ads Box-->
 
-	//<!--LinkedIn Ads Box-->
+//<!--LinkedIn Ads Box-->
 if ($linkedinAds == 1)
 {
 	echo "<div id='LinkedIn-Ads'>
@@ -317,7 +318,7 @@ if ($linkedinAds == 1)
 	</div>";
 }
 else
-	//<!--LinkedIn Ads No Service Box-->
+//<!--LinkedIn Ads No Service Box-->
 {
 	echo "<div class='servicebox row noservice'>
 		<section class=' servicebox noservice'>

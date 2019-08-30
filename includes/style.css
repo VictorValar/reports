@@ -1,18 +1,8 @@
-
-@font-face
-
-;* {
+/*Base*/
+* {
     box-sizing: border-box;
     font-family: "Roboto", Arial, Tahoma, sans-serif;
 }
-
-/*.italic {
-    font-style: italic;
-}*/
-
-/* /base*/
-
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -130,7 +120,6 @@ a {
 }
 
     #mensagem_fancybox h1 {
-        vertical-align: center;
         font-size: 1.5em;
         text-transform: uppercase;
     }
@@ -241,7 +230,7 @@ a {
 .menu .dropdown {
     position: relative;
     display: inline-block;
-    height: 100% !;
+    height: 100% !important;
 }
 
 .dropdown .dropbtn {
@@ -348,7 +337,7 @@ a {
 
 
 /* SLIDER */
-#slider {
+/*#slider {
     height: 78vh;
     position: relative;
     margin-top: 22vh;
@@ -440,28 +429,10 @@ a {
                 align-items: center;
                 justify-content: center;
                 color: #ccc;
-            }
+            }*/
 
 
-/* INFOGRAFICO */
 
-/*#infografico {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-bottom: 2px solid #ccc;
-    display: none;
-}
-
-    #infografico .content {
-        width: 70%;
-        height: 80%;
-        background: #000;
-        position: absolute;
-        bottom: 5%;
-    }*/
 
 
 
@@ -589,7 +560,7 @@ a {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 5px -7px;
-    margin-top: 17vh;
+    margin-top: 21vh;
 }
 
     .top-title h2 {
@@ -616,92 +587,90 @@ a {
         position: relative;
     }
 
-        #footer .top .content {
+
+        #footer .top .content .grid {
+            background: #eee;
+            width: 330px;
+            height: 330px;
+            left: 10%;
+            display: flex;
+            flex-flow: row wrap;
+            transform: rotate(-45deg);
+            top: 130px;
+            position: absolute;
         }
 
-            #footer .top .content .grid {
-                background: #eee;
-                width: 330px;
-                height: 330px;
-                left: 10%;
-                display: flex;
-                flex-flow: row wrap;
-                transform: rotate(-45deg);
-                top: 130px;
-                position: absolute;
-            }
-
-                #footer .top .content .grid a {
-                    height: 165px;
-                    width: 165px;
-                    background: #fff;
-                    border: 2px solid #eee;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                    #footer .top .content .grid a img {
-                        width: 90%;
-                        transform: rotate(45deg);
-                    }
-
-                #footer .top .content .grid .three img {
-                    width: 60%;
-                }
-
-            #footer .top .content .content-title {
-                height: 100%;
+            #footer .top .content .grid a {
+                height: 165px;
+                width: 165px;
+                background: #fff;
+                border: 2px solid #eee;
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
-                text-align: end;
+                justify-content: center;
             }
 
-                #footer .top .content .content-title .title {
-                    font-size: 40px;
-                    font-weight: 300;
-                    line-height: 45px;
-                    width: 30%;
+                #footer .top .content .grid a img {
+                    width: 90%;
+                    transform: rotate(45deg);
                 }
 
-                    #footer .top .content .content-title .title::before {
+            #footer .top .content .grid .three img {
+                width: 60%;
+            }
+
+        #footer .top .content .content-title {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: end;
+        }
+
+            #footer .top .content .content-title .title {
+                font-size: 40px;
+                font-weight: 300;
+                line-height: 45px;
+                width: 30%;
+            }
+
+                #footer .top .content .content-title .title::before {
+                    content: "";
+                    height: 2px;
+                    width: 118px;
+                    background: #eee;
+                    position: absolute;
+                    bottom: 252px;
+                    right: 12px;
+                    transform: rotate(-45deg);
+                    z-index: 1;
+                }
+
+                #footer .top .content .content-title .title::after {
+                    content: "";
+                    height: 2px;
+                    width: 130px;
+                    background: #eee;
+                    position: absolute;
+                    bottom: 46px;
+                    right: 212px;
+                    transform: rotate(-45deg);
+                    z-index: 1;
+                }
+
+                #footer .top .content .content-title .title span {
+                    font-weight: bold;
+                }
+
+                    #footer .top .content .content-title .title span::after {
                         content: "";
-                        height: 2px;
-                        width: 118px;
-                        background: #eee;
+                        height: 0.5vh;
+                        width: 5vw;
+                        background: #C2122B;
                         position: absolute;
-                        bottom: 252px;
-                        right: 12px;
-                        transform: rotate(-45deg);
-                        z-index: 1;
+                        bottom: 90px;
+                        right: 70px;
                     }
-
-                    #footer .top .content .content-title .title::after {
-                        content: "";
-                        height: 2px;
-                        width: 130px;
-                        background: #eee;
-                        position: absolute;
-                        bottom: 46px;
-                        right: 212px;
-                        transform: rotate(-45deg);
-                        z-index: 1;
-                    }
-
-                    #footer .top .content .content-title .title span {
-                        font-weight: bold;
-                    }
-
-                        #footer .top .content .content-title .title span::after {
-                            content: "";
-                            height: 0.5vh;
-                            width: 5vw;
-                            background: #C2122B;
-                            position: absolute;
-                            bottom: 90px;
-                            right: 70px;
-                        }
 
 .one {
 }
@@ -815,8 +784,8 @@ a {
                         transition: 0.5s;
                     }
 
-                    #footer .bottom .content .infos .socials nav a i {
-                    }
+/*#footer .bottom .content .infos .socials nav a i {
+                    }*/
 
 .line {
     height: 2px;
@@ -838,7 +807,6 @@ a {
 
     #footer .bottom .content .assign .title {
         color: #404040;
-        ;
         width: 16vw;
         font-size: 12px;
         font-weight: 300;
@@ -2037,7 +2005,7 @@ a {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .top-title {
-        margin-top: 13vh;
+        margin-top: 21vh;
     }
 
     .servicebox {
@@ -2101,7 +2069,7 @@ a {
     color: #4F4F4F;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     padding: 2.1vh;
     height: 7vh;
     width: 27vh;
@@ -2237,7 +2205,7 @@ a {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 5vh;
     border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */
+    width: 90%; /* Could be more or less, depending on screen size */
 }
 
     .modal-content h2 {
@@ -2259,7 +2227,7 @@ a {
     }
 
     .modal-content form {
-        padding: 0 15% 0;
+        padding: 0 08% 0;
         margin: 1% 20% 0;
     }
 
@@ -2286,7 +2254,7 @@ a {
 }
 
 .modal-content form .button {
-    margin: 2% 10% 0;
+    margin: 2% 30% 0;
 }
 
 
@@ -2322,7 +2290,7 @@ a {
 @media only screen and (max-width: 768px) {
 
     .modal-content {
-        margin: 50% auto;
+        margin: 50% auto 0;
     }
 }
 /*End of Modals*/

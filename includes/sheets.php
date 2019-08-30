@@ -1,57 +1,21 @@
 <?php
 
-
-
 require '../vendor/autoload.php';
-
-
-
 $client = new \Google_Client();
-
 $client->setApplicationName('Google Sheets and PHP');
-
 $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
-
 $client->setAccessType('offline');
-
 $client->setAuthConfig(__DIR__ . '/credentials.json');
-
-
-
 $service = new Google_Service_Sheets($client);
-
-
-
 $spreadsheetsId = "1-BdiDZU7d367P-NxbdhX_Nv4Y6ML5Vx415jm36h4hLc";
-
-
-
-
-
-$range = "reportsDashboard!A2:Q200";
-
+$range = "reportsDashboard!A4:Y200";
 $response = $service->spreadsheets_values->get($spreadsheetsId, $range);
-
-
-
 $values = $response->getValues();
-
-
-
 if (empty($values))
-
 {
-
 	print "No data";
 
-} else
-
-{
-
-
-	//Only activate this When Using local Host
-	$clientName = "clinipam";
-
+} else  {	
 	//Services
 	$mask1 = "%100s";
 	$mask2 = "%100s";
@@ -61,8 +25,6 @@ if (empty($values))
 	$mask6 = "%100s";
 	$mask7 = "%100s";
 	$mask8 = "%100s";
-
-
 	//Infos that go to .infob
 	$mask9 = "%100s";
 	$mask10 = "%100s";
@@ -72,17 +34,15 @@ if (empty($values))
 	$mask14 = "%100s";
 	$mask15 = "%100s";
 	$mask16 = "%100s";
-
 	//ReportUrl
-	$mask17 = "%10s";
-	$mask18 = "%10s";
-	$mask19 = "%10s";
-	$mask20 = "%10s";
+	$mask17 = "%100s";
+	$mask18 = "%100s";
+	$mask19 = "%100s";
+	$mask20 = "%100s";
 	$mask21 = "%100s";
 	$mask22 = "%100s";
 	$mask23 = "%100s";
 	$mask24 = "%100s";
-
 	foreach ($values as $row)
 
 	{
@@ -90,9 +50,6 @@ if (empty($values))
 		if ($row[0] == $clientName)
 
 		{
-
-			//
-
 			//Services
 			$gAds = sprintf($mask1, $row[1]);
 			$seo = sprintf($mask2, $row[2]);
@@ -123,31 +80,7 @@ if (empty($values))
 			$instaReportUrl = sprintf($mask22, $row[22]);
 			$linkedinReportUrl = sprintf($mask23, $row[23]);
 			$linkedinAdsReportUrl = sprintf($mask24, $row[24]);
-
-			//Infos
-			echo $Gsaldo."<br>";
-			echo $GdiasRes."<br>";
-			echo $Sorganic."<br>";
-			echo $Stotal."<br>";
-
-			echo $Fsaldo."<br>";
-			echo $FdiasRes."<br>";
-			echo $Lsaldo."<br>";
-			echo $LdiasRes."<br>";
-
-			//ReportUrl
-			echo $gAdsReportUrl."<br>";
-			echo $seoReportUrl."<br>";
-			echo $socialmediaReportUrl."<br>";
-			echo $fbReportUrl."<br>";
-			echo $fbAdsReportUrl."<br>";
-			echo $instaReportUrl."<br>";
-			echo $linkedinReportUrl."<br>";
-			echo $linkedinAdsReportUrl."<br>";
-
-
-
-
+			
 		}
 
 
@@ -158,10 +91,7 @@ if (empty($values))
 
 }
 
-//$mask = "%10s %10s %s\n";
-
-//sprintf($mask, $row[0], $row[1], $row[2]);
 
 
 
-?>
+

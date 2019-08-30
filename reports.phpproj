@@ -27,7 +27,6 @@
     <Compile Include="clinipam\social-media\index.php" />
     <Compile Include="clinipam\functions.php" />
     <Compile Include="clinipam\index.php" />
-    <Compile Include="clinipam\testes.php" />
     <Compile Include="includes\credentials.json" />
     <Compile Include="includes\header-dash.php" />
     <Compile Include="includes\header.php" />
@@ -51,5 +50,8 @@
     <Folder Include="clinipam" />
     <Folder Include="includes" />
     <Folder Include="reports-images" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clinipam\SQL" />
   </ItemGroup>
 </Project>
