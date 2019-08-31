@@ -17,26 +17,16 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="clinipam\facebook\index.php" />
-    <Compile Include="clinipam\facebook-ads\index.php" />
     <Compile Include="clinipam\google-ads\index.php" />
-    <Compile Include="clinipam\instagram\index.php" />
-    <Compile Include="clinipam\linkedin\index.php" />
-    <Compile Include="clinipam\linkedin-ads\index.php" />
-    <Compile Include="clinipam\seo\index.php" />
-    <Compile Include="clinipam\social-media\index.php" />
-    <Compile Include="clinipam\functions.php" />
+    <Compile Include="clinipam\navigation.php" />
     <Compile Include="clinipam\index.php" />
+    <Compile Include="clinipam\sol-boleto-gads.php" />
     <Compile Include="includes\credentials.json" />
     <Compile Include="includes\header-dash.php" />
     <Compile Include="includes\header.php" />
     <Compile Include="includes\sheets.php" />
     <Compile Include="includes\sol-boleto-gads.php" />
     <Compile Include="includes\style.css" />
-    <Compile Include="reports-images\footer-background.png" />
-    <Compile Include="reports-images\gads.png" />
-    <Compile Include="reports-images\social-media-ads.png" />
-    <Compile Include="reports-images\Social_Media.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="clinipam\facebook" />
@@ -49,9 +39,5 @@
     <Folder Include="clinipam\social-media" />
     <Folder Include="clinipam" />
     <Folder Include="includes" />
-    <Folder Include="reports-images" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="clinipam\SQL" />
   </ItemGroup>
 </Project>

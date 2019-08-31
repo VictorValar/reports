@@ -1,13 +1,5 @@
 
-<?php include '../../includes/header.php'; 
-	  //$dir = dirname(__FILE__);
-	  //$array = explode('\\\',$url);
-	  //$count = $count($array);
-	  //echo $array[$count-1]
-	  ;
-
-
-?>
+<?php include '../../includes/header.php';?>
 
 	  
 <section id='greyband'>

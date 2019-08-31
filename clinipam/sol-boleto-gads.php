@@ -18,8 +18,8 @@ if (isset($_POST['submit']))
 	$txt = "Você está recebendo uma solicitação de boleto do Google Ads no valor de ".$paymentAmount.".\n\n".$name." .\n\n".$tel.".\n\n".$email.".\n\n".$message.".\n\n ";
 
 	mail($mailTo, $subject, $txt, $headers);
-	header("Location: ../clinipam/index.php?mailsent");
-
+	header("Location: index.php?mailsent");
+	
 }
 //<!-- Mail -->
 //$mailTo = "victor.ribeiro@3wpublicidade.com.br";

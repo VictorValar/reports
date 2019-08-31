@@ -1,12 +1,10 @@
 
 <?php 
-$Gsaldo = "1111";
-$GdiasRes = "1";
-$Sorganic = "2222";
-$Stotal = "3333";
+//$Gsaldo = "1111";
+//$GdiasRes = "1";
+//$Sorganic = "2222";
+//$Stotal = "3333";
 include '../includes/header-dash.php';
-$clientName = "clinipam";
-
 
 ?>	
 	
@@ -27,8 +25,6 @@ $clientName = "clinipam";
 //$headers = "From: victor.ribeiro@3wpublicidade.com.br" . "\r\n" .
 //"CC: victor.ribeiro@3wpublicidade.com.br";
 //mail($to,$subject,$txt,$headers);
-
-
 
 
 //<!--Google Ads Box-->	
@@ -267,7 +263,7 @@ if ($fbAds == 1)
 				</div>
 				<div class='row'>
 					<p>Se você olha para o seu público-alvo e pensa: “Saudades do que a gente ainda não viveu”, não perca tempo! Com o serviço de Facebook Ads e o Instagram Ads, os seus posts chegam ao público que é o ideal para a sua empresa. Vem com a gente que é sucesso!</p>
-					<a class='button button4 sol-orcamento'>Solicitar Orçamento</a>
+					<a class='button button4 sol-orcamento1'>Solicitar Orçamento</a>
 				</div>
 			</div>
 		</section>
@@ -330,7 +326,7 @@ else
 				<div class='row'>
 					<p>Se você acha que o LinkedIn utilizado só por quem está procurando emprego, você está enganado. Anuncie em uma rede social onde 4 entre 5 usuários impulsionam decisões de negócios com o LinkedIn Ads.</p>
 
-					<a class='button button5 sol-orcamento'>Solicitar Orçamento</a>
+					<a class='button button5 sol-orcamento2'>Solicitar Orçamento</a>
 				</div>
 			</div>
 
@@ -444,16 +440,10 @@ else
 	</section>
 </section>
 
-
-
-
-
-
-
-
 <!--Modal sol-boleto-gads-modal-->
 <div class="sol-boleto-gads-modal">
-<div id="sol-boleto-gads-modal" class="modal"><!-- The Modal -->
+<!-- The Modal -->
+<div id="sol-boleto-gads-modal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
@@ -512,7 +502,15 @@ window.onclick = function(event) {
 }
 </script>
 </div>
-<!--End of sol-boleto-gads-modal-->
+
+
+
+
+
+
+
+
+
 
 </section><!--greyband end section tag-->
 </html>

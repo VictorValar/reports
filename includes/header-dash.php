@@ -1,8 +1,4 @@
-<?php include 'functions.php';
-	  include	'sheets.php';
-	  $clientName = "clinipam";
-?>				
-<!DOCTYPE html>
+<!DOCTYPE html> <?php include 'navigation.php'; include	'../includes/sheets.php';?>	
 
 <html>
 <head>
@@ -122,13 +118,13 @@
 			<ul>
 				<?php
 				
-				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clienteName."'>Dashboard</a></li>";
-				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clienteName."/google-ads'>Google Ads</a></li>";
-				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clienteName."/seo'>SEO</a></li>";
-				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clienteName."/facebook'>Facebook</a></li>";
-				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clienteName."/instagram'>Instagram</a></li>";
+				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."'>Dashboard</a></li>";
+				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."/google-ads'>Google Ads</a></li>";
+				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."/seo'>SEO</a></li>";
+				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."/facebook'>Facebook</a></li>";
+				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."/instagram'>Instagram</a></li>";
 				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."/linkedin'>LinkedIn</a></li>";
-				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clienteName."/facebook-ads'>Facebook Ads</a></li>";
+				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."/facebook-ads'>Facebook Ads</a></li>";
 				echo "<li><a href='http://relatorios.3wpublicidade.com.br/".$clientName."/linkedin-ads'>LinkedIn Ads</a></li>";
 			?>
 			</ul>

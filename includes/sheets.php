@@ -5,17 +5,19 @@ $client = new \Google_Client();
 $client->setApplicationName('Google Sheets and PHP');
 $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
 $client->setAccessType('offline');
-$client->setAuthConfig(__DIR__ . '/credentials.json');
+$client->setAuthConfig(__DIR__ .'/credentials.json');
+
+
 $service = new Google_Service_Sheets($client);
 $spreadsheetsId = "1-BdiDZU7d367P-NxbdhX_Nv4Y6ML5Vx415jm36h4hLc";
-$range = "reportsDashboard!A4:Y200";
+$range = "reportsDashboard!A4:Y100";
 $response = $service->spreadsheets_values->get($spreadsheetsId, $range);
 $values = $response->getValues();
 if (empty($values))
 {
 	print "No data";
 
-} else  {	
+} else  {
 	//Services
 	$mask1 = "%100s";
 	$mask2 = "%100s";
@@ -35,14 +37,14 @@ if (empty($values))
 	$mask15 = "%100s";
 	$mask16 = "%100s";
 	//ReportUrl
-	$mask17 = "%100s";
-	$mask18 = "%100s";
-	$mask19 = "%100s";
-	$mask20 = "%100s";
-	$mask21 = "%100s";
-	$mask22 = "%100s";
-	$mask23 = "%100s";
-	$mask24 = "%100s";
+	$mask17 = "%200s";
+	$mask18 = "%200s";
+	$mask19 = "%200s";
+	$mask20 = "%200s";
+	$mask21 = "%200s";
+	$mask22 = "%200s";
+	$mask23 = "%200s";
+	$mask24 = "%200s";
 	foreach ($values as $row)
 
 	{
@@ -60,7 +62,9 @@ if (empty($values))
 			$linkedin = sprintf($mask7, $row[7]);
 			$linkedinAds = sprintf($mask8, $row[8]);
 
+
 			//Infos
+			
 			$Gsaldo = sprintf($mask9, $row[9]);
 			$GdiasRes =  sprintf($mask10, $row[10]);
 			$Sorganic =  sprintf($mask11, $row[11]);
@@ -92,6 +96,6 @@ if (empty($values))
 }
 
 
-
+?>
 
 

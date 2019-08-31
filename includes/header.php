@@ -2,7 +2,8 @@
 
 <head>
 
-<!--Gets client name from hist functions--> <?php include '../functions.php'; ?>				
+<!--Gets client name and navigation info--> 
+<?php include '../navigation.php'; include	'../includes/sheets.php';?>				
 				
 	<link href="../../includes/style.css" rel="stylesheet" type="text/css">
 	<link href="http://3wpublicidade.com.br/wp-content/themes/3wpublicidade/fonts/stylesheet.css" rel="stylesheet" type="text/css">

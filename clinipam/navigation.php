@@ -26,6 +26,9 @@ $instaUrl = "http://relatorios.3wpublicidade.com.br/".$clientName."/instagram";
 $linkedinUrl = "http://relatorios.3wpublicidade.com.br/".$clientName."/linkedin";
 $linkedinAdsUrl = "http://relatorios.3wpublicidade.com.br/".$clientName."/linkedin-ads";
 
+
+
+
 /**
 
 
